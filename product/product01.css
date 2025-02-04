@@ -625,11 +625,12 @@ video::-webkit-media-controls {
 }
 
 .svg-vector-container {
-  padding-left: 310px;
+  padding-left: 15%;
 }
 .svg-vector-container .svg-vector {
   vertical-align: middle;
-  width: 100%;
+  width: auto;
+  height: 650px;
   max-height: 650px;
   min-height: 650px;
 }
