@@ -624,7 +624,10 @@ video::-webkit-media-controls {
   animation-name: scroll;
 }
 
-.svg-vector {
+.svg-vector-container {
+  padding-left: 310px;
+}
+.svg-vector-container .svg-vector {
   vertical-align: middle;
   width: 100%;
   max-height: 650px;

@@ -737,12 +737,15 @@ video::-webkit-media-controls {
   -webkit-animation-name: scroll;
           animation-name: scroll;
 }
+.svg-vector-container {
+  padding-left: 310px;
+  .svg-vector {
+    vertical-align: middle;
+    width: 100%;    
+    max-height: 650px;
+    min-height: 650px;
+  }
 
-.svg-vector {
-  vertical-align: middle;
-  width: 100%;    
-  max-height: 650px;
-  min-height: 650px;
 }
 
 
