@@ -626,13 +626,13 @@ video::-webkit-media-controls {
 
 .svg-vector-container {
   padding-left: 15%;
-}
-.svg-vector-container .svg-vector {
-  vertical-align: middle;
-  width: auto;
-  height: 650px;
-  max-height: 650px;
-  min-height: 650px;
+  height: 100%;
+  height: 300px;
+  display: block;
+  background-image: url("/assets/img/tablet-vector.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center, 50%, 50%;
 }
 
 @media (max-width: 60rem) {
