@@ -745,8 +745,8 @@ video::-webkit-media-controls {
   // position: absolute;
   // transform-style: preserve-3d;
   // transform: rotateX(45deg);
-  height: 800px;
-  min-height: 800px;
+  height: 750px;
+  min-height: 750px;
   width: auto; 
   display: block;
   background-image: url(https://thomaspiguet.github.io/folio/assets/img/tablet-vector.svg);
@@ -755,14 +755,17 @@ video::-webkit-media-controls {
   background-size: 1200px;
   // background-position: bottom center, 400px, 400px;
   background-position: 65% 0px, right 0em bottom 2em;
-  height: 950px;
+  height: 750px;
   /* max-height: 812px; */
-  min-height: 950px;
-  @media (max-width: 65rem) {
-  background-position: -4% 0px, left 0em bottom 2em
+  min-height: 750px;
+
+  @media (max-width: 1400px) {
+  background-position: 215% 0px, left 0em bottom 2em
   }
   
-
+  @media (max-width: 1200px) {
+    background-position: -6% 0px, left 0em bottom 2em
+    }
 
 .svg-vector {
  vertical-align: middle;  
