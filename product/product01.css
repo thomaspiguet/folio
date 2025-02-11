@@ -631,6 +631,7 @@ video::-webkit-media-controls {
   background-size: 1230px;
   background-position: center;
   height: 785px;
+  background-image: url(https://thomaspiguet.github.io/folio/assets/img/tablet-vector-bg.svg);
 }
 .svg-vector-container .svg-vector {
   vertical-align: middle;
