@@ -625,28 +625,11 @@ video::-webkit-media-controls {
 }
 
 .svg-vector-container {
-  padding-left: 20%;
-  height: 750px;
-  min-height: 750px;
-  width: auto;
-  display: block;
   background-image: url(https://thomaspiguet.github.io/folio/assets/img/tablet-vector.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 1200px;
-  height: 750px;
   background-position: center;
-  background-origin: content-box;
-}
-@media (max-width: 1400px) {
-  .svg-vector-container {
-    padding-left: 30%;
-  }
-}
-@media (max-width: 950px) {
-  .svg-vector-container {
-    padding-left: 40%;
-  }
 }
 .svg-vector-container .svg-vector {
   vertical-align: middle;
@@ -656,8 +639,12 @@ video::-webkit-media-controls {
   min-height: 650px;
 }
 .svg-vector-container .iframe-container {
-  width: 849px;
-  height: 658px;
+  width: 839px;
+  height: 572px;
+  position: relative;
+  top: 4px;
+  left: -165px;
+  border-radius: 48px;
 }
 
 @media (max-width: 60rem) {
