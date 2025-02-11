@@ -628,8 +628,9 @@ video::-webkit-media-controls {
   background-image: url(https://thomaspiguet.github.io/folio/assets/img/tablet-vector.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 1200px;
+  background-size: 1230px;
   background-position: center;
+  height: 785px;
 }
 .svg-vector-container .svg-vector {
   vertical-align: middle;
@@ -639,12 +640,12 @@ video::-webkit-media-controls {
   min-height: 650px;
 }
 .svg-vector-container .iframe-container {
-  width: 839px;
-  height: 572px;
+  width: 1208px;
+  height: 725px;
   position: relative;
-  top: 4px;
-  left: -165px;
-  border-radius: 48px;
+  top: 33px;
+  /* left: -165px; */
+  border-radius: 49px;
 }
 
 @media (max-width: 60rem) {
