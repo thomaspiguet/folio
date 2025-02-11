@@ -741,10 +741,7 @@ video::-webkit-media-controls {
 
 
 .svg-vector-container {
-  // padding-left: 15%;
-  // position: absolute;
-  // transform-style: preserve-3d;
-  // transform: rotateX(45deg);
+  padding-left: 20%;
   height: 750px;
   min-height: 750px;
   width: auto; 
@@ -753,28 +750,34 @@ video::-webkit-media-controls {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 1200px;
+  // background-attachment: fixed;
   // background-position: bottom center, 400px, 400px;
-  background-position: 65% 0px, right 0em bottom 2em;
+  // background-position: 65% 0px, right 0em bottom 2em;
   height: 750px;
-  /* max-height: 812px; */
-  min-height: 750px;
+  background-position: center;
+  background-origin: content-box;
 
-  @media (max-width: 1400px) {
-  background-position: 215% 0px, left 0em bottom 2em
-  }
-  
-  @media (max-width: 1200px) {
-    background-position: -6% 0px, left 0em bottom 2em
-    }
-
-.svg-vector {
- vertical-align: middle;  
- width: auto;  
- height: 800px;
- max-height: 650px;
- min-height: 650px;
-
+   @media (max-width: 1400px) {
+    padding-left: 30%;
  }
+ @media (max-width: 950px) {
+  padding-left: 40%;
+}
+  // @media (max-width: 1200px) {
+  //   background-position: -6% 0px, left 0em bottom 2em
+  //   }
+
+  .svg-vector {
+  vertical-align: middle;  
+  width: auto;  
+  height: 800px;
+  max-height: 650px;
+  min-height: 650px;
+  }
+  .iframe-container {
+    width: 849px;
+    height: 658px;
+    }
 
 }
 

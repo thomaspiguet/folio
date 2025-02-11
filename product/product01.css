@@ -625,6 +625,7 @@ video::-webkit-media-controls {
 }
 
 .svg-vector-container {
+  padding-left: 20%;
   height: 750px;
   min-height: 750px;
   width: auto;
@@ -633,19 +634,18 @@ video::-webkit-media-controls {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 1200px;
-  background-position: 65% 0px, right 0em bottom 2em;
   height: 750px;
-  /* max-height: 812px; */
-  min-height: 750px;
+  background-position: center;
+  background-origin: content-box;
 }
 @media (max-width: 1400px) {
   .svg-vector-container {
-    background-position: 215% 0px, left 0em bottom 2em;
+    padding-left: 30%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 950px) {
   .svg-vector-container {
-    background-position: -6% 0px, left 0em bottom 2em;
+    padding-left: 40%;
   }
 }
 .svg-vector-container .svg-vector {
@@ -654,6 +654,10 @@ video::-webkit-media-controls {
   height: 800px;
   max-height: 650px;
   min-height: 650px;
+}
+.svg-vector-container .iframe-container {
+  width: 849px;
+  height: 658px;
 }
 
 @media (max-width: 60rem) {
