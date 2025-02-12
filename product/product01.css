@@ -9,17 +9,6 @@ body {
 /*
  * Custom translucent site header
  */
-.bi {
-  vertical-align: -0.3em;
-  fill: currentColor;
-  padding-left: 7px;
-  font-size: 28px;
-}
-.bi i {
-  vertical-align: -0.3em;
-  font-size: 28px;
-}
-
 .site-header {
   background-color: rgba(0, 0, 0, 0.85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -517,6 +506,17 @@ a:hover {
   fill: currentColor;
 }
 
+.bi {
+  vertical-align: -0.24em;
+  fill: currentColor;
+  padding-left: 5px;
+  font-size: 32px;
+}
+.bi i {
+  vertical-align: -0.24em;
+  font-size: 30px;
+}
+
 .nav-scroller {
   position: relative;
   z-index: 2;
@@ -647,8 +647,10 @@ video::-webkit-media-controls {
   /* padding-left: 71px; */
 }
 .svg-vector-container .iframe-container {
-  width: 1208px;
+  width: 100%;
   height: 725px;
+  max-width: 1208px;
+  min-width: 980px;
   position: relative;
   top: 33px;
   /* left: -165px; */
