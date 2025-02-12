@@ -11,12 +11,31 @@ body {
  * Custom translucent site header
  */
 
+// .bi-icon{
+//   font-size: 15px;
+//   vertical-align: -0.3em;
+//   a{
+//     padding-left: 20px;
+//   }
+//   .bi {
+//     vertical-align: -0.3em;
+//     fill: currentColor;
+//     padding-left: 7px;
+//     font-size: 28px;
+//   }
+// }
 
 .bi {
-  vertical-align: 0.3em!important;
+  vertical-align: -0.3em;
   fill: currentColor;
-  font-size: 24px;
+  padding-left: 7px;
+  font-size: 28px;
+  i {
+    vertical-align: -0.3em;
+    font-size: 28px;
+  }
 }
+
 .site-header {
   background-color: rgba(0, 0, 0, 0.85);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
@@ -774,16 +793,16 @@ video::-webkit-media-controls {
   //   background-position: -6% 0px, left 0em bottom 2em
   //   }
 
-  .svg-vector {
-    background-image: url(https://thomaspiguet.github.io/folio/assets/img/tablet-vector-bg.svg);
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-size: 1534px;
-    background-position: center;
-    height: 1499px;
-    /* padding-left: 71px; */
-  }
-      
+.svg-vector {
+  background-image: url(https://thomaspiguet.github.io/folio/assets/img/tablet-vector-bg.svg);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-size: 1534px;
+  background-position: center;
+  height: 1499px;
+  /* padding-left: 71px; */
+}
+    
   
   
     .iframe-container {
