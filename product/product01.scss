@@ -821,9 +821,18 @@ video::-webkit-media-controls {
 
 }
 
-
-
-
+.svg-vector-container-shade {
+    /* bottom: 89px; */
+    /* background-image: url(https://thomaspiguet.github.io/folio/assets/img/tablet-vector.svg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    width: 1765px;
+    /* background-position: center; */
+    height: 60px;
+    position: relative;
+    z-index: -5;
+    margin-left: 15%;
+}
 
 
 @media (max-width: 60rem) {
