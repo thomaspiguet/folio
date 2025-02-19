@@ -657,6 +657,11 @@ video::-webkit-media-controls {
   border-radius: 49px;
   z-index: 1;
 }
+@media (max-width: 1165px) {
+  .svg-vector-container .iframe-container {
+    border-radius: 0px;
+  }
+}
 
 .svg-vector-container-shade {
   /* bottom: 89px; */

@@ -817,6 +817,10 @@ video::-webkit-media-controls {
       /* left: -165px; */
       border-radius: 49px;
       z-index: 1;
+
+      @media (max-width: 1165px) {
+        border-radius: 0px;
+      }
   }
 
 }
