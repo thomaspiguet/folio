@@ -6,6 +6,11 @@ body {
   max-width: 960px;
 }
 
+hr {
+  height: 45px !important;
+  background-color: white;
+}
+
 /*
  * Custom translucent site header
  */
