@@ -809,6 +809,7 @@ video::-webkit-media-controls {
   background-position: center;
   height: 1499px;
   /* padding-left: 71px; */
+  
 }
     
   
@@ -854,42 +855,43 @@ video::-webkit-media-controls {
 
 .svg-vector-mobile-container {
 
+  // background-image: url(https://thomaspiguet.github.io/folio/assets/img/mobile-vector.svg);
+  // background-repeat: no-repeat; 
+  // background-size: cover;
+  // background-size: 800px 100%;
+  // background-position: center;
+  // height: 800px;
   background-image: url(https://thomaspiguet.github.io/folio/assets/img/mobile-vector.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 800px 100%;
   background-position: center;
-  // height: 785px;
+  height: 800px;
 
+ 
 
-
-
-// .svg-mobile-vector {
-//   background-image: url(https://thomaspiguet.github.io/folio/assets/img/mobile-vector.svg);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-size: 780px;
-//   background-position: center;
-//   height: 1499px;
-//   padding-left: 71px; 
-// }
+.svg-mobile-vector {
+  // background-image: url(https://thomaspiguet.github.io/folio/assets/img/mobile-vector.svg);
+  // background-repeat: no-repeat;
+  // background-size: 780px;
+  // background-position: center;
+  // height: 1499px;
+}
     
   
   
     .iframe-mobile-container {
-      width: 100%;
-      height: 725px;
-      max-width:1208px;
-      min-width:980px;
+      height: 783px;
+      width: 360px;
       position: relative;
-      top: 33px;
+      top: 8px;
       /* left: -165px; */
-      border-radius: 49px;
+      border-radius: 41px;
       z-index: 1;
 
-      @media (max-width: 1165px) {
-        border-radius: 0px;
-      }
+      // @media (max-width: 1165px) {
+      //   border-radius: 0px;
+      // }
   }
 
 }
