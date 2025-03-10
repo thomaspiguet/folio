@@ -667,6 +667,22 @@ video::-webkit-media-controls {
     border-radius: 0px;
   }
 }
+.svg-vector-container .video-svg-container {
+  width: 100%;
+  height: 709px;
+  max-width: 1208px;
+  min-width: 929px;
+  position: relative;
+  top: 33px;
+  /* left: -165px; */
+  border-radius: 49px;
+  z-index: 1;
+}
+@media (max-width: 1165px) {
+  .svg-vector-container .video-svg-container {
+    border-radius: 0px;
+  }
+}
 
 .svg-vector-container-shade {
   /* bottom: 89px; */
