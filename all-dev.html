@@ -344,25 +344,23 @@
 
 
       <script>
-         document.addEventListener("DOMContentLoaded", function () {
-            const sections = document.querySelectorAll("section");
-            
-            const observer = new IntersectionObserver(
-               (entries) => {
-                     entries.forEach((entry) => {
-                        if (entry.isIntersecting) {
-                           window.history.replaceState(null, null, `#${entry.target.id}`);
-                        }
-                     });
-               },
-               { threshold: 0.5 } // Adjust to trigger when 50% of the section is visible
-            );
+      document.addEventListener("DOMContentLoaded", function () {
+         const sections = document.querySelectorAll("section");
 
-            sections.forEach((section) => {
-               observer.observe(section);
-            });
-         });
+         const observer = new IntersectionObserver(
+            (entries) => {
+                  entries.forEach((entry) => {
+                     if (entry.isIntersecting) {
+                        entry.target.scrollIntoView({ behavior: "smooth" });
+                        window.history.replaceState(null, null, `#${entry.target.id}`);
+                     }
+                  });
+            },
+            { threshold: 0.6 } // Adjust trigger point (60% visibility)
+         );
 
+         sections.forEach((section) => observer.observe(section));
+      });
        </script>
 
        
