@@ -338,8 +338,33 @@
             </div>
          </section>
       </main>
-      >
+      
       <script src=" assets/dist/js/bootstrap.bundle.min.js"></script>
       <script></script>
+
+
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("section");
+            
+            const observer = new IntersectionObserver(
+               (entries) => {
+                     entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                           window.history.replaceState(null, null, `#${entry.target.id}`);
+                        }
+                     });
+               },
+               { threshold: 0.5 } // Adjust to trigger when 50% of the section is visible
+            );
+
+            sections.forEach((section) => {
+               observer.observe(section);
+            });
+         });
+
+       </script>
+
+       
    </body>
 </html>

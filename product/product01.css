@@ -11,6 +11,10 @@ hr {
   background-color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*
  * Custom translucent site header
  */
