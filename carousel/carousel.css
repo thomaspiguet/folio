@@ -99,7 +99,7 @@ body {
 -------------------------------------------------- */
 
 .carousel-item {
-  height: 15rem;
+  height: 75rem;
 }
 
 @media (min-width: 10rem) {
@@ -107,7 +107,7 @@ body {
     margin-top: 2rem;
   }
   .carousel-item {
-    height: 20rem;
+    height: 75rem;
   }
   
 }
@@ -134,7 +134,7 @@ body {
     margin-top: 2rem;
   }
   .carousel-item {
-    height: 40rem;
+    height: 75rem;
   }
   
 }
