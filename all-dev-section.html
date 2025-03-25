@@ -129,12 +129,13 @@
                            </a>
                            <a class="" type="button"><img src="assets\img\cinema-4d.png"></a>
                            <a class="" type="button"><img src="assets\img\angular.svg" alt="">
-                           </a>            
+                           </a>       
                         </div>
                         <h2 id="" class="display-6">High-end prototyping with stunning 3d transform effects</h2>
                         <p class="fs-sm text-muted">
                            Experience a fully responsive, cutting-edge prototype that adapts flawlessly to any screen size. Built for pixel-perfect precision, smooth interactions, and immersive 3D transformations, this prototype delivers real-world usability and next-level engagement. Perfect for testing and showcasing your ideas across all devices.
                         </p>
+                        <div id="iframeContainer"></div>
                      </div>
                   </div>
                </div>
@@ -148,7 +149,11 @@
                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
+
+
                <div class="carousel-item active">
+
+                  
                   <div id="" class="row g-0">
                      <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover order-lg-2 g-0">
                         <div class="align-self-center ">
@@ -173,7 +178,9 @@
                                  <p class="small">Built with </p>
                                  <div class="d-flex gap-3 justify-content-center py-1">
                                     <a class="" type="button"><img src="assets/img/figma.svg" alt="figma"></a> <a class="" type="button"><img src="assets/img/c-sharp-programming-language-icon.svg" alt="c-sharp-programming-language-icon"></a>  
-                                    <a class="" type="button"><img src="assets/img/illustrator.svg" alt="illustrator"></a>     
+                                    <a class="" type="button"><img src="assets/img/illustrator.svg" alt="illustrator"></a>
+
+                                    <button onclick="loadIframe()">Load iFrame</button>        
                                  </div>
                                  <h2 id="" class="display-6">Optimizing your figma workflow with flows & business rules</h2>
                                  <p class="fs-sm text-muted">
@@ -232,7 +239,7 @@
                   </div>
                   <h2 id="" class="display-6">Design process with a seamless figma workflow</h2>
                   <p class="fs-sm text-muted">
-Design seamless user experiences with Figma’s flow-based workflow. Map out user journeys, connect screens effortlessly, and visualize interactions with dynamic prototyping. Flows help streamline design reviews, making it easy to test, iterate, and refine user navigation—all in one place.
+                  Design seamless user experiences with Figma’s flow-based workflow. Map out user journeys, connect screens effortlessly, and visualize interactions with dynamic prototyping. Flows help streamline design reviews, making it easy to test, iterate, and refine user navigation—all in one place.
                   </p>
                </div>
             </div>
@@ -363,6 +370,16 @@ Design seamless user experiences with Figma’s flow-based workflow. Map out use
              carousel.pause();
          });
           
-      </script>   
+      </script> 
+      
+      
+      <script>
+         function loadIframe() {
+             let container = document.getElementById('iframeContainer');
+             container.innerHTML = '<iframe src="https://thomaspiguet.github.io/prototype-client-space/portail-client/index.html"></iframe>';
+         }
+      </script>
+
+
    </body>
 </html>
