@@ -4,11 +4,11 @@
 
 
 
-/* body {
+body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
-} */
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -141,10 +141,9 @@
     font-size: 1.25rem;
     line-height: 1.4;
     .carousel-item {
-      height: 30em;
+      height: 56rem;
     }
   }
-
   .featurette-heading {
     font-size: 50px;
   }
@@ -155,7 +154,7 @@
     margin-top: 2rem;
   }
   .carousel-item {
-    height: 59rem;
+    height: 56rem;
   }
   
 }
@@ -165,7 +164,7 @@
     margin-top: 2rem;
   }
   .carousel-item {
-  height: 59rem;
+  height: 56rem;
   }
   
 }
