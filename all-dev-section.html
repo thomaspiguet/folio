@@ -87,6 +87,8 @@
         </header>
         <main class="text-bg-white text-center">
             <div class="icon-scroll"></div>
+
+
             <section  id="section01" class="row g-0" id="">
                 <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover order-lg-2 g-0">
                     <div class="align-self-center ">
@@ -125,7 +127,7 @@
                     </div>
                 </div>
             </section>
-            <hr>
+
             <section  id="section02" class="row g-0" id="">
 
 
@@ -189,7 +191,7 @@
                      </div>
 
 
-                     <div class="carousel-item ">
+                     <div class="carousel-item">
                         <div class="text-bg-white text-center overflow-hidden">
                             <div class="my-3 py-2">
                                 <h2 class="display-5">User login Workflows</h2>
@@ -236,6 +238,10 @@
                         <p class="small">Built with </p>
                         <div class="d-flex gap-3 justify-content-center py-1">
                             <a class="" type="button"><img src="assets\img\figma.svg" alt=""></a>
+                            <div class="gap-3" style="top: -8px;  position: relative;">
+                              <a href="#" class="bi-icon text-decoration-none">Case study<i class="bi bi-link-45deg"></i></a>
+                              <a href="#" class="bi-icon text-decoration-none">Project<i style="font-size: 23px;" class="bi bi-box-arrow-up-right"></i></a>
+                           </div>
                         </div>
                         <h2 id="" class="display-6">Design Process with a Seamless Figma Workflow</h2>
                         <p class="fs-sm text-muted">
@@ -246,7 +252,7 @@
                     </div>
                 </div>
             </section>
-            <hr>
+
             <!-- <section id="section04" class="row g-0">
                 <div class="text-bg-white text-center overflow-hidden">
                    <div class="my-3 py-2">
@@ -313,32 +319,57 @@
                 </div>
                 </section> -->
         </main>
-        <script src=" assets/dist/js/bootstrap.bundle.min.js"></script>
-        <script></script>
 
+        <script src=" assets/dist/js/bootstrap.bundle.min.js"></script>
 
 
         <script>
-         document.addEventListener("DOMContentLoaded", function () {
-            const sections = document.querySelectorAll("section");
-            
-            const observer = new IntersectionObserver(
-               (entries) => {
-                  entries.forEach((entry) => {
-                     if (entry.isIntersecting) {
-                        // Update URL without scrolling
-                        window.history.replaceState(null, null, `#${entry.target.id}`);
+            document.addEventListener("DOMContentLoaded", function () {
+               const sections = document.querySelectorAll("section");
+               let currentSection = null;
+         
+               const observer = new IntersectionObserver(
+                  (entries) => {
+                     let bestMatch = null;
+                     let maxVisibility = 0;
+         
+                     entries.forEach((entry) => {
+                        if (entry.intersectionRatio > maxVisibility) {
+                           maxVisibility = entry.intersectionRatio;
+                           bestMatch = entry.target;
+                        }
+                     });
+         
+                     if (bestMatch && bestMatch !== currentSection) {
+                        currentSection = bestMatch;
+         
+                        // Update URL strictly without any scrolling
+                        history.replaceState(null, null, `#${currentSection.id}`);
                      }
-                  });
-               },
-               { threshold: 0.6 } // 60% of section must be visible
-            );
+                  },
+                  { threshold: [0.6, 0.8, 1.0] } // More granular tracking
+               );
+         
+               sections.forEach((section) => observer.observe(section));
+            });
+         </script>
+         
+         
       
-            sections.forEach((section) => observer.observe(section));
-         });
-      </script>
-      
-      
+   
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var myCarousel = document.querySelector("#myCarousel"); // Change ID if needed
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: false, // Disables autoplay
+        ride: false // Prevents automatic cycling
+    });
+
+    // Optional: Stop any ongoing autoplay
+    carousel.pause();
+});
+ </script>   
         
+
     </body>
 </html>

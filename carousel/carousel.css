@@ -51,9 +51,9 @@ body {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   opacity: .5;
-  transition: opacity .6s ease;
+  transition: opacity .20s ease;
 }
-.carousel-indicators .active {
+.carousel-indicators .active { 
   opacity: 1;
 }
 
