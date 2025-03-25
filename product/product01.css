@@ -1,18 +1,23 @@
 body {
-  padding-top: 5rem;
-}
-
-.container {
-  max-width: 960px;
-}
-
-hr {
-  height: 45px !important;
   background-color: white;
+}
+
+section {
+  padding-top: 10rem;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+hr:not([size]) {
+  height: 10px;
+}
+
+hr {
+  background-color: white;
+  border: 0;
+  opacity: 0;
 }
 
 /*

@@ -4,11 +4,11 @@
 
 
 
-body {
+/* body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
-}
+} */
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -155,7 +155,7 @@ body {
     margin-top: 2rem;
   }
   .carousel-item {
-    height: 75rem;
+    height: 59rem;
   }
   
 }
@@ -165,7 +165,7 @@ body {
     margin-top: 2rem;
   }
   .carousel-item {
-    height: 65rem;
+  height: 59rem;
   }
   
 }
