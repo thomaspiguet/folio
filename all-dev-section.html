@@ -121,44 +121,138 @@
       </header>
       <main class="text-bg-white text-center">
          <div class="icon-scroll"></div>
+
+
+
+
+
+
+
          <section  id="section01" class="row g-0" id="">
-            <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover order-lg-2 g-0">
-               <div class="align-self-center ">
-                  <div class="svg-vector-mobile-container">
-                     <iframe class="iframe-mobile-container" src="https://thomaspiguet.github.io/blueprint/blueprint/index.html"> </iframe>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+
+
+               <div class="carousel-item active">
+
+
+
+                  <div class="text-bg-white text-center overflow-hidden">
+                     <div class="my-3 py-2">
+                        <h2 class="display-5">User login Workflows</h2>
+                        <button onclick="loadIframe01()" href="#" class="bi-icon btn-pulse">Start the workflow<i style="font-size: 24px;" class="bi bi-collection-play"></i></button>
+                     </div>
                   </div>
-                  <div class="position-relative">
-                     <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
-                        <div class="svg-vector-mobile-container-shade">
-                           <img src="assets\img\mobile-vector-shade.svg" alt="">
+                  <div class="">
+                     <div class="">
+                        <div class="svg-vector-container">
                            <div>
+                              <iframe class="iframe-container" id="iframeContainer01"  src="https://thomaspiguet.github.io/prototype-client-space/portail-client/index-start.html"></iframe>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="position-relative">
+                        <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
+                           <div class="svg-vector-container-shade"><img src="assets/img/tablet-vector-bg.svg" alt="tablet-vector-bg"></div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+
+               </div>
+
+
+
+
+               <div class="carousel-item">
+
+
+                  <div id="" class="row g-0">
+
+
+                     
+                     <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover order-lg-2 g-0">
+                        <div class="align-self-center ">
+                           <div class="svg-vector-mobile-container" id="">
+                              <iframe class="iframe-mobile-container"  id="iframeContainer" src="https://thomaspiguet.github.io/prototype-client-space/portail-client/index-mobile-start.html"> </iframe>
+                           </div>
+                           <div class="position-relative">
+                              <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
+                                 <div class="svg-vector-mobile-container-shade">
+                                    <img src="assets\img\mobile-vector-shade.svg" alt="">
+                                    <div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 col-md-12 px-3 px-md-5 py-5 order-md-1">
+                        <div class="mx-auto py-lg-4 ">
+                           <div class="row">
+                              <div class="col-lg-8 offset-lg-3 col-sm-12 ">
+                                 <p class="small">Built with </p>
+                                 <div class="d-flex gap-3 justify-content-center py-1">
+                                    <a class="" type="button"><img src="assets/img/figma.svg" alt="figma"></a> <a class="" type="button"><img src="assets/img/c-sharp-programming-language-icon.svg" alt="c-sharp-programming-language-icon"></a>  
+                                    <a class="" type="button"><img src="assets/img/illustrator.svg" alt="illustrator"></a>
+
+
+
+
+                                 </div>
+                                 <h2 id="" class="display-6">Optimizing your figma workflow with flows & business rules</h2>
+                                 <p class="fs-sm text-muted">
+                                    Streamline your design process by integrating flows with clear business rules. Map user journeys, define conditional interactions, and ensure alignment with product requirements. Figma’s dynamic prototyping allows for real-time testing and iteration, ensuring compliance with business logic while enhancing user experience. From decision points to automated validations, flows help create intuitive, rule-driven designs that scale efficiently.
+                                 </p>
+
+                                 <div class="gap-1" style="top: -8px;  position: relative;padding-top: 20px;">
+
+
+                                    <button onclick="loadIframe03()" href="#" class="bi-icon btn-pulse">Start the workflow<i style="font-size: 24px;" class="bi bi-collection-play"></i></button>
+
+                                 </div>
+
+
+
+                    
+
+
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
+
+
+
+
+
                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 px-3 px-md-5 py-5 order-md-1">
-               <div class="mx-auto py-lg-4 ">
-                  <div class="row">
-                     <div class="col-lg-8 offset-lg-3 col-sm-12 ">
-                        <p class="small">Built with </p>
-                        <div class="d-flex gap-3 justify-content-center py-1">
-                           <a class="" type="button"><img src="assets\img\illustrator.svg" alt="">
-                           </a>
-                           <a class="" type="button"><img src="assets\img\cinema-4d.png"></a>
-                           <a class="" type="button"><img src="assets\img\angular.svg" alt="">
-                           </a>       
-                        </div>
-                        <h2 id="" class="display-6">High-end prototyping with stunning 3d transform effects</h2>
-                        <p class="fs-sm text-muted">
-                           Experience a fully responsive, cutting-edge prototype that adapts flawlessly to any screen size. Built for pixel-perfect precision, smooth interactions, and immersive 3D transformations, this prototype delivers real-world usability and next-level engagement. Perfect for testing and showcasing your ideas across all devices.
-                        </p>
-                     </div>
-                  </div>
-               </div>
+
+
+
+
+
+               <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+               </button>
             </div>
          </section>
+
+
+
 
 
          <section  id="section02" class="row g-0" id="">
@@ -264,6 +358,10 @@
                </button>
             </div>
          </section>
+
+
+
+
          <section  id="section03" class="row g-0">
             <div class="col-lg-8 col-md-12 bg-position-center bg-size-cover g-0 ">
                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="1000" src="https://embed.figma.com/proto/3mwlPEQO9Tk33XadqToDdX/Telco-Individus---Organisations?node-id=1-1443&starting-point-node-id=1%3A1229&embed-host=share" allowfullscreen></iframe>  
@@ -369,7 +467,45 @@
          </section>
       </main>
 
-      
+      <section  id="section05" class="row g-0" id="">
+         <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover order-lg-2 g-0">
+            <div class="align-self-center ">
+               <div class="svg-vector-mobile-container">
+                  <iframe class="iframe-mobile-container" src="https://thomaspiguet.github.io/blueprint/blueprint/index.html"> </iframe>
+               </div>
+               <div class="position-relative">
+                  <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
+                     <div class="svg-vector-mobile-container-shade">
+                        <img src="assets\img\mobile-vector-shade.svg" alt="">
+                        <div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-6 col-md-12 px-3 px-md-5 py-5 order-md-1">
+            <div class="mx-auto py-lg-4 ">
+               <div class="row">
+                  <div class="col-lg-8 offset-lg-3 col-sm-12 ">
+                     <p class="small">Built with </p>
+                     <div class="d-flex gap-3 justify-content-center py-1">
+                        <a class="" type="button"><img src="assets\img\illustrator.svg" alt="">
+                        </a>
+                        <a class="" type="button"><img src="assets\img\cinema-4d.png"></a>
+                        <a class="" type="button"><img src="assets\img\angular.svg" alt="">
+                        </a>       
+                     </div>
+                     <h2 id="" class="display-6">High-end prototyping with stunning 3d transform effects</h2>
+                     <p class="fs-sm text-muted">
+                        Experience a fully responsive, cutting-edge prototype that adapts flawlessly to any screen size. Built for pixel-perfect precision, smooth interactions, and immersive 3D transformations, this prototype delivers real-world usability and next-level engagement. Perfect for testing and showcasing your ideas across all devices.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
       <!-- <script>
          document.addEventListener("DOMContentLoaded", function () {
             const sections = document.querySelectorAll("section");
