@@ -37,7 +37,24 @@
          });
           
       </script> 
-      
+
+            <script>
+               document.addEventListener("DOMContentLoaded", function () {
+                   var myCarousel01 = document.querySelector("#myCarousel01"); // Change ID if needed
+                   var carousel = new bootstrap.Carousel(myCarousel01, {
+                       interval: false, // Disables autoplay
+                       ride: false // Prevents automatic cycling
+                   });
+               
+                   // Optional: Stop any ongoing autoplay
+                   carousel.pause();
+               });
+                
+            </script> 
+
+
+
+
    </head>
    <body class="d-flex flex-column h-100">
       <header class="">
@@ -121,44 +138,170 @@
       </header>
       <main class="text-bg-white text-center">
          <div class="icon-scroll"></div>
+
+
+
+
+
+
+
          <section  id="section01" class="row g-0" id="">
-            <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover order-lg-2 g-0">
-               <div class="align-self-center ">
-                  <div class="svg-vector-mobile-container">
-                     <iframe class="iframe-mobile-container" src="https://thomaspiguet.github.io/blueprint/blueprint/index.html"> </iframe>
+            <div id="myCarousel01" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#myCarousel01" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#myCarousel01" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#myCarousel01" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+
+
+               <div class="carousel-item active">
+
+
+
+                  <div class="text-bg-white text-center overflow-hidden">
+
+
+                     <div class="my-3 py-2">
+                        <h2 class="display-5">Built with Figma for pixel-perfect precision</h2>
+                        <!-- <button onclick="loadIframe02()" href="#" class="bi-icon btn-pulse">Start the workflow<i style="font-size: 24px;" class="bi bi-collection-play"></i></button> -->
+                     </div>
                   </div>
-                  <div class="position-relative">
-                     <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
-                        <div class="svg-vector-mobile-container-shade">
-                           <img src="assets\img\mobile-vector-shade.svg" alt="">
+                  <div class="">
+                     <div class="">
+                        <div class="svg-vector-container">
                            <div>
+                              <iframe class="iframe-container" id=""  src="https://thomaspiguet.github.io/birks/Birks-Bridal-Collection"></iframe>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="position-relative">
+                        <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
+                           <div class="svg-vector-container-shade"><img src="assets/img/tablet-vector-bg.svg" alt="tablet-vector-bg"></div>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+
+               </div>
+
+               <div class="carousel-item">
+ 
+                  <div id="" class="row g-0">
+
+                  <div class="col-lg-8 col-md-12 bg-position-center bg-size-cover g-0 ">
+
+                     <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="1000" src="https://embed.figma.com/proto/IKmpsUucPq2R46yqXBsW3q/Birks?node-id=3141-993&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3141%3A993&embed-host=share" allowfullscreen></iframe>
+
+                  </div>
+                  <div class="col-lg-4 col-md-12 px-3 px-md-5 py-md-3 py-6 ">
+                     <div class="mx-auto py-lg-4" style="max-width: 35rem;">
+                        <p class="small">Built with </p>
+                        <div class="d-flex gap-3 justify-content-center py-1">
+                           <a class="" type="button"><img src="assets\img\figma.svg" alt=""></a>
+                           <div class="gap-3" style="top: -8px;  position: relative;">
+                              <a href="#" class="bi-icon text-decoration-none">Case study<i class="bi bi-link-45deg"></i></a>
+                              <a href="#" class="bi-icon text-decoration-none">Project<i style="font-size: 23px;" class="bi bi-box-arrow-up-right"></i></a>
+                           </div>
+                        </div>
+                        <h2 id="" class="display-6">Design process with a seamless figma workflow</h2>
+                        <p class="fs-sm text-muted">
+                        Design seamless user experiences with Figma’s flow-based workflow. Map out user journeys, connect screens effortlessly, and visualize interactions with dynamic prototyping. Flows help streamline design reviews, making it easy to test, iterate, and refine user navigation—all in one place.
+                        </p>
+                     </div>
+                  </div>
+
+               </div>
+
+
+               </div>
+
+
+               <div class="carousel-item">
+
+
+                  <div id="" class="row g-0">
+
+
+                     
+                     <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover order-lg-2 g-0">
+                        <div class="align-self-center ">
+                           <div class="svg-vector-mobile-container" id="">
+                              <iframe class="iframe-mobile-container"  id="" src="https://thomaspiguet.github.io/birks/Collection-mobile.html"> </iframe>
+                           </div>
+                           <div class="position-relative">
+                              <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
+                                 <div class="svg-vector-mobile-container-shade">
+                                    <img src="assets\img\mobile-vector-shade.svg" alt="">
+                                    <div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 col-md-12 px-3 px-md-5 py-5 order-md-1">
+                        <div class="mx-auto py-lg-4 ">
+                           <div class="row">
+                              <div class="col-lg-8 offset-lg-3 col-sm-12 ">
+                                 <p class="small">Built with </p>
+                                 <div class="d-flex gap-3 justify-content-center py-1">
+                                    <a class="" type="button"><img src="assets/img/figma.svg" alt="figma"></a> 
+                                    <a class="" type="button"><img src="assets/img/c-sharp-programming-language-icon.svg" alt="c-sharp-programming-language-icon"></a>  
+                                    <a class="" type="button"><img src="assets/img/photoshop.svg" alt=""></a>
+
+
+
+
+                                 </div>
+                                 <h2 id="" class="display-6">Optimizing your figma workflow with flows & business rules</h2>
+                                 <p class="fs-sm text-muted">
+                                    Streamline your design process by integrating flows with clear business rules. Map user journeys, define conditional interactions, and ensure alignment with product requirements. Figma’s dynamic prototyping allows for real-time testing and iteration, ensuring compliance with business logic while enhancing user experience. From decision points to automated validations, flows help create intuitive, rule-driven designs that scale efficiently.
+                                 </p>
+
+                                 <div class="gap-1" style="top: -8px;  position: relative;padding-top: 20px;">
+
+
+                                    <!-- <button onclick="loadIframe03()" href="#" class="bi-icon btn-pulse">Start the workflow<i style="font-size: 24px;" class="bi bi-collection-play"></i></button> -->
+
+                                 </div>
+
+
+
+                    
+
+
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
+
+
+
+
+
                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 px-3 px-md-5 py-5 order-md-1">
-               <div class="mx-auto py-lg-4 ">
-                  <div class="row">
-                     <div class="col-lg-8 offset-lg-3 col-sm-12 ">
-                        <p class="small">Built with </p>
-                        <div class="d-flex gap-3 justify-content-center py-1">
-                           <a class="" type="button"><img src="assets\img\illustrator.svg" alt="">
-                           </a>
-                           <a class="" type="button"><img src="assets\img\cinema-4d.png"></a>
-                           <a class="" type="button"><img src="assets\img\angular.svg" alt="">
-                           </a>       
-                        </div>
-                        <h2 id="" class="display-6">High-end prototyping with stunning 3d transform effects</h2>
-                        <p class="fs-sm text-muted">
-                           Experience a fully responsive, cutting-edge prototype that adapts flawlessly to any screen size. Built for pixel-perfect precision, smooth interactions, and immersive 3D transformations, this prototype delivers real-world usability and next-level engagement. Perfect for testing and showcasing your ideas across all devices.
-                        </p>
-                     </div>
-                  </div>
-               </div>
+
+
+
+
+
+               <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel01" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#myCarousel01" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+               </button>
             </div>
          </section>
+
+
+
 
 
          <section  id="section02" class="row g-0" id="">
@@ -208,9 +351,9 @@
                                     <!-- <button class="btn"><i class="fa fa-file-play"></i> Folder</button> -->
 
                                  </div>
-                                 <h2 id="" class="display-6">Optimizing your figma workflow with flows & business rules</h2>
+                                 <h2 id="" class="display-6">Optimizing your workflow</h2>
                                  <p class="fs-sm text-muted">
-                                    Streamline your design process by integrating flows with clear business rules. Map user journeys, define conditional interactions, and ensure alignment with product requirements. Figma’s dynamic prototyping allows for real-time testing and iteration, ensuring compliance with business logic while enhancing user experience. From decision points to automated validations, flows help create intuitive, rule-driven designs that scale efficiently.
+                                    Streamline your design process by integrating flows with clear business rules. Map user journeys, define conditional interactions, and ensure alignment with product requirements. Dynamic prototyping allows for real-time testing and iteration, ensuring compliance with business logic while enhancing user experience. From decision points to automated validations, flows help create intuitive, rule-driven designs that scale efficiently.
                                  </p>
 
                                  <div class="gap-1" style="top: -8px;  position: relative;padding-top: 20px;">
@@ -264,7 +407,14 @@
                </button>
             </div>
          </section>
+
+
+
+
          <section  id="section03" class="row g-0">
+
+
+
             <div class="col-lg-8 col-md-12 bg-position-center bg-size-cover g-0 ">
                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="1000" src="https://embed.figma.com/proto/3mwlPEQO9Tk33XadqToDdX/Telco-Individus---Organisations?node-id=1-1443&starting-point-node-id=1%3A1229&embed-host=share" allowfullscreen></iframe>  
             </div>
@@ -278,13 +428,18 @@
                         <a href="#" class="bi-icon text-decoration-none">Project<i style="font-size: 23px;" class="bi bi-box-arrow-up-right"></i></a>
                      </div>
                   </div>
-                  <h2 id="" class="display-6">Design process with a seamless figma workflow</h2>
+                  <h2 id="" class="display-6">Built with Figma for pixel-perfect precision</h2>
                   <p class="fs-sm text-muted">
-                  Design seamless user experiences with Figma’s flow-based workflow. Map out user journeys, connect screens effortlessly, and visualize interactions with dynamic prototyping. Flows help streamline design reviews, making it easy to test, iterate, and refine user navigation—all in one place.
+                     ensuring a flawless and responsive web experience. Every detail crafted to perfection for a seamless user journey.
                   </p>
                </div>
             </div>
+
+
          </section>
+
+
+
          <!-- <section id="section04" class="row g-0">
             <div class="text-bg-white text-center overflow-hidden">
                <div class="my-3 py-2">
@@ -350,7 +505,53 @@
                </div>
             </div>
             </section> -->
-         <section id="section04" class="row g-0">
+
+         
+            <section  id="section04" class="row g-0 " id="">
+
+               <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover order-lg-2 g-0">
+                  <div class="align-self-center ">
+                     <div class="svg-vector-mobile-container">
+                        <iframe class="iframe-mobile-container" src="https://thomaspiguet.github.io/blueprint/blueprint/index.html"> </iframe>
+                     </div>
+                     <div class="position-relative">
+                        <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
+                           <div class="svg-vector-mobile-container-shade">
+                              <img src="assets\img\mobile-vector-shade.svg" alt="">
+                              <div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12 px-3 px-md-5 py-5 order-md-1">
+                  <div class="mx-auto py-lg-4 ">
+                     <div class="row">
+                        <div class="col-lg-8 offset-lg-3 col-sm-12 ">
+                           <p class="small">Built with </p>
+                           <div class="d-flex gap-3 justify-content-center py-1">
+                              <a class="" type="button"><img src="assets\img\illustrator.svg" alt="">
+                              </a>
+                              <a class="" type="button"><img src="assets\img\cinema-4d.png"></a>
+                              <a class="" type="button"><img src="assets\img\angular.svg" alt="">
+                              </a>       
+                           </div>
+                           <h2 id="" class="display-6">High-end prototyping with stunning 3d transform effects</h2>
+                           <p class="fs-sm text-muted">
+                              Experience a fully responsive, cutting-edge prototype that adapts flawlessly to any screen size. Built for pixel-perfect precision, smooth interactions, and immersive 3D transformations, this prototype delivers real-world usability and next-level engagement. Perfect for testing and showcasing your ideas across all devices.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+      
+      
+         
+               
+         <section id="section05" class="row g-0">
+
+
             <div class="col-lg-8 col-md-12 bg-position-center bg-size-cover g-0">
                <video class="" playsinline="" muted="" loop="" autoplay="" id="">
                   <source src="assets/video/figma-responsive-sogetel.mp4" type="video/mp4">
@@ -366,10 +567,475 @@
                   <p class="fs-sm text-muted">that adapts seamlessly to any screen size. Designed for pixel-perfect precision, smooth interactions, and real-world usability. Perfect for testing and showcasing your ideas across devices.</p>
                </div>
             </div>
+
+
+
          </section>
-      </main>
+<div id="" class="text-bg-white text-center overflow-hidden">
 
       
+      <div class="my-3 py-2">
+        <h2 class="display-5">Software Prototyping        
+        </h2> 
+        <p class="lead">+ design + interface creation + Web development.
+        </p>
+
+        <p class="small">Built with </p>
+
+        <div class="d-flex gap-3 justify-content-center py-1">
+
+
+
+          <a class="" type="button"><img src="assets\img\illustrator.svg" alt="">
+        </a>
+        <a class="" type="button"><img src="assets\img\c-sharp-programming-language-icon.svg" alt="">
+      </a>
+
+
+
+            <div class="gap-3" style="top: -8px;  position: relative;">
+          <a href="#" class="bi-icon text-decoration-none">Case study<i class="bi bi-link-45deg"></i></a>
+          <a href="#" class="bi-icon text-decoration-none">Project<i style="font-size: 23px;" class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+
+
+            
+        </div>
+      </div>
+
+
+        <div class="align-self-center ">
+
+          <div class="svg-vector-container">
+            <iframe class="iframe-container" sandbox="allow-scripts allow-same-origin" src="https://thomaspiguet.github.io/blueprint/blueprint/index.html"> </iframe>
+        </div>
+
+
+        <div class="position-relative">
+
+          <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
+    
+    
+          <div class="svg-vector-container-shade">
+            <img src="assets\img\tablet-vector-bg.svg" alt="">
+            <div>
+    
+    
+            </div>
+          </div>
+        </div>
+      
+        </div>
+
+ 
+        <div id="" class="text-bg-white text-center overflow-hidden">
+
+      
+          <div class="my-3 py-2">
+            <h2 class="display-5">Software Prototyping        
+            </h2>
+            <p class="lead">+ design + interface creation + Web development.
+            </p>
+    
+            <p class="small">Built with </p>
+    
+            <div class="d-flex gap-3 justify-content-center py-1">
+    
+    
+    
+              <a class="" type="button"><img src="assets\img\illustrator.svg" alt="">
+            </a>
+            <a class="" type="button"><img src="assets\img\c-sharp-programming-language-icon.svg" alt="">
+          </a>
+    
+    
+    
+                <div class="gap-3" style="top: -8px;  position: relative;">
+              <a href="#" class="bi-icon text-decoration-none">Case study<i class="bi bi-link-45deg"></i></a>
+              <a href="#" class="bi-icon text-decoration-none">Project<i style="font-size: 23px;" class="bi bi-box-arrow-up-right"></i></a>
+            </div>
+    
+    
+                
+            </div>
+          </div>
+    
+    
+            <div class="align-self-center ">
+    
+              <div class="svg-vector-container">
+                <iframe class="iframe-container" sandbox="allow-scripts allow-same-origin" src="https://thomaspiguet.github.io/blueprint/blueprint/index.html"> </iframe>
+            </div>
+    
+    
+            <div class="position-relative">
+    
+              <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
+        
+        
+              <div class="svg-vector-container-shade">
+                <img src="assets\img\tablet-vector-bg.svg" alt="">
+                <div>
+        
+        
+                </div>
+              </div>
+            </div>
+          
+            </div>
+          </div>
+
+            
+
+    <div id="" class="text-bg-white text-center overflow-hidden">
+
+<!-- 
+      <div class="my-3 py-2">
+        <h2 class="display-5">Visual identity Maison Birks        
+        </h2>
+        <p class="lead">+ design + typography. 
+        </p>
+
+
+
+
+        <p class="small">Built with </p>
+
+        <div class="d-flex gap-3 justify-content-center py-1">
+
+
+         <a class="" type="button"
+            ><img src="assets\img\figma.svg" alt=""
+          /></a>
+          <a class="" type="button"
+            ><img src="assets\img\photoshop.svg" alt=""
+          /></a>
+          <a class="" type="button"
+          ><img src="assets\img\illustrator.svg" alt="">
+        </a>
+
+
+         <a class="" type="button"><img src="assets\img\after-effects.svg" alt=""
+            /></a>
+
+
+
+            <a class="" type="button"><img src="assets\img\premiere.svg" /></a>
+
+            <div class="gap-3" style="top: -8px;  position: relative;">
+          <a href="#" class="bi-icon text-decoration-none">Case study<i class="bi bi-link-45deg"></i></a>
+                  <a href="#" class="bi-icon text-decoration-none">Project<i style="font-size: 23px;" class="bi bi-box-arrow-up-right"></i></a>
+        </div>
+
+
+            
+        </div>
+      </div>
+
+
+      <div class=" ">
+
+        <div class=" ">
+
+
+        <div class="svg-vector-container" >
+          <div >
+            <iframe   class="iframe-container " src="https://thomaspiguet.github.io/prototype-client-space/portail-client/index.html"> </iframe>
+
+
+        </div>
+        <div class="position-relative">
+
+          <div class="position-absolute bottom-0 start-50 translate-middle"style="z-index:-5;">
+    
+    
+          <div class="svg-vector-container-shade">
+            <img src="assets\img\tablet-vector-bg.svg" alt="">
+            <div>
+    
+    
+            </div>
+          </div>
+        </div>
+      
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+  
+
+    </div> -->
+
+
+
+    
+
+    <section class="row g-0">
+
+      <div class="col-lg-8 col-md-12 bg-position-center bg-size-cover g-0 ">
+
+        <video class="" playsinline="" muted="" loop="" autoplay="" id="">
+          <source src="assets/video/figma-responsive-sogetel.mp4" type="video/mp4">
+        </video>
+
+      </div>
+
+      <div class="col-lg-4 col-md-12 px-3 px-md-5 py-1">
+        
+        <div class="mx-auto py-lg-4">
+          <p class="small">Built with </p>
+<div class="d-flex gap-3 justify-content-center py-1">
+
+
+         <a class="" type="button"><img src="assets\img\figma.svg" alt=""></a>
+            
+        </div>
+          <h2 id="" class="display-6">Experience a fully responsive Figma prototype</h2>
+          <p class="fs-sm text-muted">
+            that adapts seamlessly to any screen size. Designed for pixel-perfect precision, smooth interactions, and real-world usability. Perfect for testing and showcasing your ideas across devices.
+        </p></div>
+      </div>
+
+    </section>
+
+    <section class="row g-0" id="">
+      <div class="col-lg-8 col-md-12 bg-position-center bg-size-cover  order-lg-2 g-0">
+
+
+
+        <video class="" playsinline="" muted="" loop="" autoplay="" id="">
+          <source src="assets/video/doc-01.webm" type="video/webm">
+          <source src="assets/video/doc-01.mp4" type="video/mp4">
+        </video>
+
+      </div>
+
+      <div class="col-lg-4 col-md-12 px-3 px-md-5 py-1 order-md-1">
+        <p class="small">Built with </p>
+        <div class="d-flex gap-3 justify-content-center py-1">
+          <a class="" type="button"><img src="assets\img\adobe-xd.svg" alt=""></a>
+ <a class="" type="button"><img src="assets\img\csharp.svg" alt=""></a>
+ <a class="" type="button"><img src="assets\img\sitecore.svg" alt=""></a>
+</div>
+        <div class="mx-auto py-lg-4">
+          <h2 id="" class="display-6">A cohesive Design System built from the ground up</h2>
+          <p class="fs-sm text-muted">
+            design, creation, and development of a robust style guide. Ensure consistency, scalability, and a seamless user experience across all platforms.
+        </p>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section class="row g-0">
+
+      <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover g-0 ">
+
+        <video class="" playsinline="" muted="" loop="" autoplay="" id="">
+          <source src="assets/video/doc-01.webm" type="video/webm">
+          <source src="assets/video/doc-01.mp4" type="video/mp4">
+        </video>
+
+      </div>
+
+      <div class="col-lg-6 col-md-12 px-3 px-md-5 py-5">
+        <div class="mx-auto py-lg-5" style="max-width: 35rem;">
+          <h2 id="Workflows" class="display-5">User login Workflows</h2>
+          <p class="fs-sm pb-3 text-muted">
+            User-Centric Design:
+            The approach always starts with understanding the user. Conduct in-depth user research to identify pain
+            points and preferences, ensuring that the login workflow aligns with their needs.
+        </p></div>
+      </div>
+
+    </section>
+
+    <section class="row g-0" id="Transactional">
+      <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover  order-lg-2 g-0">
+
+
+
+        <video class="" playsinline="" muted="" loop="" autoplay="" id="">
+          <source src="assets/video/doc-01.webm" type="video/webm">
+          <source src="assets/video/doc-01.mp4" type="video/mp4">
+        </video>
+
+      </div>
+
+      <div class="col-lg-6 col-md-12 px-3 px-md-5 py-5 order-md-1">
+        <div class="mx-auto py-lg-5" style="max-width: 35rem;">
+          <h2 class="display-5">Transactional Website</h2>
+          <p class="fs-sm pb-3 text-muted">User Journey Optimization: Discover how I've meticulously analyzed user journeys to identify pain points and design transitional elements that bridge the gaps, ensuring a continuous and intuitive user experience.</p>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="row g-0">
+
+      <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover g-0 ">
+
+        <!-- <video class="" playsinline muted loop autoplay id="">
+          <source src="assets/video/doc-01.webm" type="video/webm" />
+          <source src="assets/video/doc-01.mp4" type="video/mp4" />
+          <source src="assets/video/doc-01.mov" type="video/mov" />
+        </video> -->
+        <img src="assets/video/account.gif">
+
+      </div>
+
+      <div class="col-lg-6 col-md-12 px-3 px-md-5 py-5">
+        <div class="mx-auto py-lg-5" style="max-width: 35rem;">
+          <h2 id="Workflows" class="display-5">User login Workflows</h2>
+          <p class="fs-sm pb-3 text-muted">
+            User-Centric Design:
+            The approach always starts with understanding the user. Conduct in-depth user research to identify pain
+            points and preferences, ensuring that the login workflow aligns with their needs.
+        </p></div>
+      </div>
+
+    </section>
+
+    <section class="row g-0" id="Transactional">
+      <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover  order-lg-2 g-0">
+
+        <img src="assets/video/transac_1.gif">
+
+      </div>
+
+      <div class="col-lg-6 col-md-12 px-3 px-md-5 py-5 order-md-1">
+        <div class="mx-auto py-lg-5" style="max-width: 35rem;">
+          <h2 class="display-5">Transactional Website</h2>
+          <p class="fs-sm pb-3 text-muted">User Journey Optimization: Discover how I've meticulously analyzed user journeys to identify pain points and design transitional elements that bridge the gaps, ensuring a continuous and intuitive user experience.</p>
+
+        </div>
+      </div>
+    </section>
+
+
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="text-bg-primary text-center">
+            <div class="my-3 py-2">
+              <h2 id="process" class="display-5">Complete User Experience Process</h2>
+              <!-- <p class="lead">+ an even wittier subheading.</p> -->
+            </div>
+            <div class="bg-white mx-auto">
+              <img src=" assets/img/ux-010.png">
+            </div>
+          </div>
+
+          <div class="bg-white text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">Software +  Interface Design</h2>
+              <p class="lead">+ UI development.</p>
+            </div>
+            <div class="bg-white mx-auto">
+              <img src=" assets/img/dash-01.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="bg-white text-center overflow-hidden">
+            <div class="my-3 py-2">
+              <h2 id="Wireframes" class="display-5">Complete Wireframes</h2>
+              <p class="lead">+ Comprehensive Guide.</p>
+            </div>
+            <div class="bg-body mx-auto scroll-element">
+              <img src=" assets/img/ux-07.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="bg-white text-center overflow-hidden">
+            <div class="my-3 py-2">
+              <h2 id="architecture" class="display-5">Information architecture</h2>
+              <p class="lead">+ define the goals and objectives </p>
+            </div>
+            <div class="bg-body mx-auto">
+              <img src=" assets/img/ux-01.jpg">
+            </div>
+          </div>
+        </div>
+
+
+
+        
+    
+    
+        </div>
+    
+    
+    
+      
+    
+        </div>
+
+        
+
+
+      </div></div>
+
+         
+      <section  id="section06" class="row g-0 " id="">
+
+         <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover order-lg-2 g-0">
+            <div class="align-self-center ">
+               <div class="svg-vector-mobile-container">
+                  <iframe class="iframe-mobile-container" src="https://thomaspiguet.github.io/blueprint/blueprint/index.html"> </iframe>
+               </div>
+               <div class="position-relative">
+                  <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
+                     <div class="svg-vector-mobile-container-shade">
+                        <img src="assets\img\mobile-vector-shade.svg" alt="">
+                        <div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-6 col-md-12 px-3 px-md-5 py-5 order-md-1">
+            <div class="mx-auto py-lg-4 ">
+               <div class="row">
+                  <div class="col-lg-8 offset-lg-3 col-sm-12 ">
+                     <p class="small">Built with </p>
+                     <div class="d-flex gap-3 justify-content-center py-1">
+                        <a class="" type="button"><img src="assets\img\illustrator.svg" alt="">
+                        </a>
+                        <a class="" type="button"><img src="assets\img\cinema-4d.png"></a>
+                        <a class="" type="button"><img src="assets\img\angular.svg" alt="">
+                        </a>       
+                     </div>
+                     <h2 id="" class="display-6">High-end prototyping with stunning 3d transform effects</h2>
+                     <p class="fs-sm text-muted">
+                        Experience a fully responsive, cutting-edge prototype that adapts flawlessly to any screen size. Built for pixel-perfect precision, smooth interactions, and immersive 3D transformations, this prototype delivers real-world usability and next-level engagement. Perfect for testing and showcasing your ideas across all devices.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+         
+      </section>
+      </main>
+
+
+
       <!-- <script>
          document.addEventListener("DOMContentLoaded", function () {
             const sections = document.querySelectorAll("section");
@@ -441,66 +1107,92 @@
 
 
 
+
+
+
 <script>
+
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = [
-        document.getElementById("section01"),
-        document.getElementById("section02"),
-        document.getElementById("section03"),
-        document.getElementById("section04"),
-        document.getElementById("section05")
-    ];
-
-    function preloadContent(section) {
-        if (!section) return;
-        const iframes = section.getElementsByTagName("iframe");
-        const images = section.getElementsByTagName("img");
-
-        // Preload images
-        for (let img of images) {
-            const imgSrc = img.getAttribute("src");
-            if (imgSrc) {
-                const preloadImg = new Image();
-                preloadImg.src = imgSrc;
-            }
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+          observer.unobserve(entry.target); // Stops observing after activation
         }
-        
-        // Preload iframes
-        for (let iframe of iframes) {
-            const iframeSrc = iframe.getAttribute("src");
-            if (iframeSrc && !iframe.dataset.loaded) {
-                iframe.dataset.loaded = "true";
-                iframe.src = iframeSrc;
-            }
-        }
-    }
+      });
+    },
+    { threshold: 0.2 } // Trigger when 20% of the element is visible
+  );
 
-    function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
-
-    function checkViewport() {
-        sections.forEach(section => {
-            if (section && isInViewport(section)) {
-                preloadContent(section);
-            }
-        });
-    }
-
-    window.addEventListener("scroll", checkViewport);
-    checkViewport(); // Initial check in case sections are already in view
+  document.querySelectorAll(".svg-vector-container").forEach((element) => {
+    observer.observe(element);
+  });
 });
-
-
-
-
 </script>
+
+
+
+
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+       const sections = [
+           document.getElementById("section01"),
+           document.getElementById("section02"),
+           document.getElementById("section03"),
+           document.getElementById("section04"),
+           document.getElementById("section05")
+       ];
+   
+       function preloadContent(section) {
+           if (!section) return;
+           const iframes = section.getElementsByTagName("iframe");
+           const images = section.getElementsByTagName("img");
+   
+           // Preload images
+           for (let img of images) {
+               const imgSrc = img.getAttribute("src");
+               if (imgSrc) {
+                   const preloadImg = new Image();
+                   preloadImg.src = imgSrc;
+               }
+           }
+           
+           // Preload iframes
+           for (let iframe of iframes) {
+               const iframeSrc = iframe.getAttribute("src");
+               if (iframeSrc && !iframe.dataset.loaded) {
+                   iframe.dataset.loaded = "true";
+                   iframe.src = iframeSrc;
+               }
+           }
+       }
+   
+       function isInViewport(element) {
+           const rect = element.getBoundingClientRect();
+           return (
+               rect.top >= 0 &&
+               rect.left >= 0 &&
+               rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+               rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+           );
+       }
+   
+       function checkViewport() {
+           sections.forEach(section => {
+               if (section && isInViewport(section)) {
+                   preloadContent(section);
+               }
+           });
+       }
+   
+       window.addEventListener("scroll", checkViewport);
+       checkViewport(); // Initial check in case sections are already in view
+   });
+   
+   </script>
+
+
 
 <script src=" assets/dist/js/bootstrap.bundle.min.js"></script>
 
