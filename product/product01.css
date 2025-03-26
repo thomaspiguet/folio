@@ -796,4 +796,24 @@ a .pulse {
   100% {
     transform: scale(1);
   }
+}
+.svg-vector-mobile-container {
+  transform: perspective(1200px) rotateY(-4deg) rotateX(-1deg) scale(1);
+  transition: transform 0.6s ease-in-out;
+  transform-origin: center;
+  margin: 10px;
+}
+
+.svg-vector-mobile-container:hover {
+  transform: perspective(1200px) rotateY(0deg) rotateX(0deg) scale(1.03);
+}
+
+.svg-vector-container {
+  transform: perspective(1200px) rotateY(-3deg) rotateX(2deg) scale(1);
+  transition: transform 0.8s ease-in-out;
+  margin: 2px;
+}
+
+.svg-vector-container.active {
+  transform: perspective(1200px) rotateY(0deg) rotateX(0deg) scale(1.01);
 }/*# sourceMappingURL=product01.css.map */
