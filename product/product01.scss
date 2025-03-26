@@ -1047,12 +1047,12 @@ a {
 }
 
 
-.svg-vector-container {
-  transform: perspective(1200px) rotateY(-3deg) rotateX(2deg) scale(1);
-  transition: transform 0.8s ease-in-out;
-  margin: 2px;
-}
+// .svg-vector-container {
+//   transform: perspective(1200px) rotateY(-5deg) rotateX(2deg) scale(1);
+//   transition: transform 0.8s ease-in-out;
+//   margin: 2px;
+// }
 
-.svg-vector-container.active {
-  transform: perspective(1200px) rotateY(0deg) rotateX(0deg) scale(1.02);
-}
+// .svg-vector-container.active {
+//   transform: perspective(1200px) rotateY(0deg) rotateX(0deg) scale(1.02);
+// }
