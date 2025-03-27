@@ -142,7 +142,7 @@
                            <div class="col-lg-6 col-md-12 bg-position-center bg-size-cover order-lg-2 g-0">
                                <div class="align-self-center ">
                                    <div class="svg-vector-mobile-container" id="">
-                                       <iframe class="iframe-mobile-container"  id="iframeContainer" src="https://thomaspiguet.github.io/prototype-client-space/portail-client/index-mobile-start.html"> </iframe>
+                                       <iframe class="iframe-mobile-container cursor-not"  id="iframeContainer" src="https://thomaspiguet.github.io/prototype-client-space/portail-client/index-mobile-start.html"> </iframe>
                                    </div>
                                    <div class="position-relative">
                                        <div class="position-absolute bottom-0 start-50 translate-middle" style="z-index:-5;">
@@ -161,8 +161,9 @@
                                        <div class="col-lg-8 offset-lg-3 col-sm-12 ">
                                            <p class="small">Built with </p>
                                            <div class="d-flex gap-3 justify-content-center py-1">
-                                               <a class="" type="button"><img src="assets/img/figma.svg" alt="figma"></a> <a class="" type="button"><img src="assets/img/c-sharp-programming-language-icon.svg" alt="c-sharp-programming-language-icon"></a>  
-                                               <a class="" type="button"><img src="assets/img/illustrator.svg" alt="illustrator"></a>
+                                               <a class="cursor-not" type="button"><img src="assets/img/figma.svg" alt="figma"></a> 
+                                               <a class="cursor-not" type="button"><img src="assets/img/c-sharp-programming-language-icon.svg" alt="c-sharp-programming-language-icon"></a>  
+                                               <a class="cursor-not" type="button"><img src="assets/img/illustrator.svg" alt="illustrator"></a>
                                                <!-- <button class="btn"><i class="fa fa-file-play"></i> Folder</button> -->
                                            </div>
                                            <h2 id="" class="display-6">Optimizing your workflow</h2>
@@ -183,7 +184,7 @@
                    <div class="carousel-item">
                        <div class="text-bg-white text-center overflow-hidden">
                            <div class="my-3 py-2">
-                               <h2 class="display-5">User login Workflows</h2>
+                               <!-- <h2 class="display-5">User login Workflows</h2> -->
                                <button onclick="loadIframe01()" href="#" class="bi-icon btn-pulse">Start the workflow<i style="font-size: 24px;" class="bi bi-collection-play"></i></button>
                            </div>
                        </div>
@@ -191,7 +192,7 @@
                            <div class="">
                                <div class="svg-vector-container">
                                    <div>
-                                       <iframe class="iframe-container" id="iframeContainer01"  src="https://thomaspiguet.github.io/prototype-client-space/portail-client/index-start.html"></iframe>
+                                       <iframe class="iframe-container cursor-not" id="iframeContainer01"  src="https://thomaspiguet.github.io/prototype-client-space/portail-client/index-start.html"></iframe>
                                    </div>
                                </div>
                            </div>
@@ -232,7 +233,7 @@
                             <div class="">
                                 <div class="svg-vector-container">
                                     <div>
-                                        <iframe class="iframe-container" id=""  src="https://thomaspiguet.github.io/birks/Birks-Bridal-Collection"></iframe>
+                                        <iframe class="iframe-container" id=""  src="https://thomaspiguet.github.io/birks/Birks-Bridal-Collection.html"></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -505,41 +506,7 @@
                 </div>
             </section>
         </main>
-        <!-- <script>
-            document.addEventListener("DOMContentLoaded", function () {
-               const sections = document.querySelectorAll("section");
-               let currentSection = null;
-            
-               const observer = new IntersectionObserver(
-                  (entries) => {
-                     let bestMatch = null;
-                     let maxVisibility = 0;
-            
-                     entries.forEach((entry) => {
-                        if (entry.intersectionRatio > maxVisibility) {
-                           maxVisibility = entry.intersectionRatio;
-                           bestMatch = entry.target;
-                        }
-                     });
-            
-                     if (bestMatch && bestMatch !== currentSection) {
-                        currentSection = bestMatch;
-            
-                        history.replaceState(null, null, `#${currentSection.id}`);
-                     }
-                  },
-                  { threshold: [0.6, 0.8, 1.0] }
-               );
-            
-               sections.forEach((section) => observer.observe(section));
-            });
-            </script> -->
-        <!-- <script>
-            function loadIframe() {
-                let iframe = document.getElementById('iframeContainer');
-                iframe.src = "https://thomaspiguet.github.io/prototype-client-space/portail-client/index-mobile.html";
-            }
-            </script> -->
+
         <script>
             function loadIframe() {
                 let iframe = document.getElementById('iframeContainer');

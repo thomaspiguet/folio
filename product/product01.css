@@ -806,4 +806,8 @@ a .pulse {
 
 .svg-vector-mobile-container:hover {
   transform: perspective(1200px) rotateY(0deg) rotateX(0deg) scale(1.03);
+}
+
+.cursor-not {
+  cursor: not-allowed !important;
 }/*# sourceMappingURL=product01.css.map */
