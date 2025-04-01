@@ -24,9 +24,9 @@ body {
 }
 
 /* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 10rem;
-}
+// .carousel-item {
+//   height: 10rem;
+// }
 .carousel-item > img {
   position: absolute;
   top: 0;
@@ -109,7 +109,7 @@ body {
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
-  /* rtl:remove */
+  /* rtl:remove */ 
   letter-spacing: -.05rem;
 }
 
@@ -120,16 +120,21 @@ body {
 -------------------------------------------------- */
 
 .carousel-item {
-  height: 60rem;
+  height: 75rem;
+  // @media (min-width: 62em) {
+  //   height: 65rem;
+  //   }
+  @media (min-width: 62rem) {
+      height: 60rem;
+  }
 }
+
+
 
 @media (min-width: 10rem) {
   .featurette-heading {
     margin-top: 2rem;
   }
-  .carousel-item {
-    height: 70rem;
-  } 
 }
 
 .carousel-indicators {
@@ -146,6 +151,7 @@ body {
   margin-left: 15%;
   list-style: none;
   @media (min-width: 10rem) {
+    bottom: -75px;
   }
 }
 
@@ -157,9 +163,6 @@ body {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
-    .carousel-item {
-      height: 60rem;
-    }
   }
   .featurette-heading {
     font-size: 50px;
@@ -170,18 +173,9 @@ body {
   .featurette-heading {
     margin-top: 2rem;
   }
-  .carousel-item {
-    height: 60rem;
-  }
-  
 }
-
 @media (min-width: 120em) {
   .featurette-heading {
     margin-top: 2rem;
-  }
-  .carousel-item {
-    height: 60rem;
-  }
-  
+  } 
 }
