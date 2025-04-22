@@ -653,22 +653,27 @@
             
         </script>
 
-<!-- <script>
+<script>
 document.addEventListener("DOMContentLoaded", function () {
+  // Only run on screen widths 768px or less (mobile)
   if (window.innerWidth <= 768) {
-    const carousel = document.getElementById("myCarousel");
+    const carouselIds = ["myCarousel01", "myCarousel"];
 
-    if (carousel) {
-      const items = carousel.querySelectorAll(".carousel-item");
-      const parent = carousel.parentNode;
+    carouselIds.forEach(id => {
+      const carousel = document.getElementById(id);
 
-      items.forEach(item => {
-        parent.insertBefore(item, carousel);
-      });
-    }
+      if (carousel) {
+        const items = carousel.querySelectorAll(".carousel-item");
+        const parent = carousel.parentNode;
+
+        items.forEach(item => {
+          parent.insertBefore(item, carousel);
+        });
+      }
+    });
   }
 });
-</script> -->
+</script>
 
         <script src=" assets/dist/js/bootstrap.bundle.min.js"></script>
     </body>
